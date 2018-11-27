@@ -10,7 +10,6 @@ RUN docker-php-source extract && \
     git clone -b 4.1.1 --depth 1 https://github.com/phpredis/phpredis.git /usr/src/php/ext/redis && \
     docker-php-ext-install redis
 
-# RUN cp /usr/src/php/ext/openssl/config0.m4 /usr/src/php/ext/openssl/config.m4
 RUN docker-php-ext-install pdo_mysql json mbstring
 
 RUN curl -sS https://getcomposer.org/installer | php
