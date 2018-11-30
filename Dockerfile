@@ -18,9 +18,9 @@ RUN composer config -g repos.packagist composer https://packagist.jp
 RUN composer global require hirak/prestissimo
 
 ## detail config
-COPY ./config/Www.conf /usr/local/etc/php-fpm.d/www.conf
-COPY ./config/www.conf.default /usr/local/etc/php-fpm.d/www.conf.default
-COPY ./config/conf.d /usr/local/etc/php/conf.d
-COPY ./config/php.ini-development /usr/local/etc/php/php.ini-development
-COPY ./config/php.ini-production /usr/local/etc/php/php.ini-production
+COPY ./config/www.conf /usr/local/etc/php-fpm.d/www.conf
+# COPY ./config/www.conf.default /usr/local/etc/php-fpm.d/www.conf.default
+# COPY ./config/conf.d /usr/local/etc/php/conf.d
+# COPY ./config/php.ini-development /usr/local/etc/php/php.ini-development
+# COPY ./config/php.ini-production /usr/local/etc/php/php.ini-production
 
